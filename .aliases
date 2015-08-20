@@ -1,0 +1,25 @@
+# Magento aliases
+alias modman-php="php ~/Documents/tools/modman-php/modman.php" # Change on you path for modman-php
+alias mcc="n98-magerun.phar cache:clean; n98-magerun.phar cache:flush"
+
+# Reload zsh config
+alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
+
+# System aliases
+alias tf='tail -F -n200'
+alias zshconfig='nano ~/.zshrc'
+alias top='top -o%CPU'
+alias c='clear'
+
+# Show external ip
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+
+# View http traffic
+alias sniff="sudo ngrep -d 'eth0' -t '^(GET|POST) ' 'tcp and port 80'" #For Mac users change eth0 on en1
+
+# Edit note
+alias note='nano ~/Documents/note'
+
+# Timer for JIRA tasks
+alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
+ 

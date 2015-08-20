@@ -26,11 +26,8 @@ alias modman-php="php ~/Documents/tools/modman-php/modman.php" # Change on you p
 alias mcc="n98-magerun.phar cache:clean; n98-magerun.phar cache:flush"
 
 # Management
-alias dots="cd ~/.dotfiles && sublime"
 alias reload='source ~/.bash_profile && echo "sourced ~/.bash_profile"'
-alias redot='cd ~/.dotfiles && gpp && rake install; cd -'
 alias hosts='sudo nano /etc/hosts'
-alias zshconfig='nano ~/.zshrc'
 
 # git commamands simplified
 alias gs='git status'

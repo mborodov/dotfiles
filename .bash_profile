@@ -51,9 +51,6 @@ alias h="history"
 # Shell
 alias la='ls -lhaG'
 
-# List only directories
-alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
-
 alias top='top -ocpu'
 alias tf='tail -F -n200'
 alias clr='clear'

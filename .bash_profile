@@ -27,6 +27,7 @@ alias mcc="n98-magerun.phar cache:clean; n98-magerun.phar cache:flush"
 
 # Management
 alias reload='source ~/.bash_profile && echo "sourced ~/.bash_profile"'
+alias redot='cd ~/; rm -rf .bash_profile .gitconfig .gitignore .inputrc .nanorc; cd ~/Documents/dotfiles; cp .bash_profile .gitconfig .gitignore .inputrc .nanorc ~/; source ~/.bash_profile && echo "redoted dotfiles!"'
 alias hosts='sudo nano /etc/hosts'
 
 # git commamands simplified

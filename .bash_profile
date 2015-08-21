@@ -16,10 +16,14 @@ export LC_ALL=$LANG
 export LC_CTYPE=$LANG
 
 # Promt
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ [\1]/'
+}
+
 branch() {
   git branch | grep '*' | sed 's/* //'
 }
-export PS1='\[\033[1;35m\]\u\[\033[0m\]:\[\033[1;35m\]\W\[\033[0m\] \[\033[1;92m\][$(branch)]\[\033[0m\]$ '
+export PS1='\[\033[1;35m\]\u\[\033[0m\]:\[\033[1;35m\]\W\[\033[0m\] \[\033[1;92m\]$(parse_git_branch)\[\033[0m\]$ '
 
 
 # Magento aliases
@@ -28,7 +32,7 @@ alias mcc="n98-magerun.phar cache:clean; n98-magerun.phar cache:flush"
 
 # Management
 alias reload='source ~/.bash_profile && echo "sourced ~/.bash_profile"'
-alias redot='cd ~/; rm -rf .bash_profile .gitconfig .gitignore .inputrc .nanorc; cd ~/Documents/dotfiles; cp .bash_profile .gitconfig .gitignore .inputrc .nanorc ~/; source ~/.bash_profile && echo "redoted dotfiles!"'
+alias redot='cd ~/Documents/dotfiles; source install.sh'
 alias hosts='sudo nano /etc/hosts'
 
 # git commamands simplified

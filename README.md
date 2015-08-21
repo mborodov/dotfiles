@@ -9,13 +9,13 @@
 You can clone the repository to ~/Docuemtns/dotfiles. The install script will pull in the latest version and copy the files to your home folder.
 
 ```bash
-mkdir ~/Documents/dotfiles && cd ~/Documents && git clone https://github.com/mathiasbynens/dotfiles.git && cd dotfiles && source install.sh
+mkdir ~/Documents/dotfiles && cd ~/Documents && git clone https://github.com/mborodov/dotfiles.git && cd dotfiles && source install.sh
 ```
 
 To update, `cd` into your local `dotfiles` repository and then:
 
 ```bash
-install bootstrap.sh
+source install.sh
 ```
 
 To reload config:

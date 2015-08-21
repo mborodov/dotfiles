@@ -24,3 +24,17 @@ To reload config:
 reload
 ```
 
+## Feedback
+
+Suggestions/improvements
+[welcome](https://github.com/mborodov/dotfiles/issues)!
+
+## Author
+
+| [![twitter/mborodov](https://gravatar.com/userimage/39256140/6c301ec8a6e16dffdf13383a55b016e4.jpg)](http://twitter.com/mborodov "Follow @mborodov on Twitter") |
+|---|
+| [Mathias Bynens](https://mathiasbynens.be/) |
+
+## Thanks to…
+
+* [Mathias Bynens](https://mathiasbynens.be/) and his [dotfiles repository](https://github.com/mathiasbynens/dotfiles)

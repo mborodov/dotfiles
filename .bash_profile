@@ -16,10 +16,11 @@ export LC_ALL=$LANG
 export LC_CTYPE=$LANG
 
 # Promt
-parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ [\1]/'
+branch() {
+  git branch | grep '*' | sed 's/* //'
 }
-export PS1='\[\033[1;35m\]\u\[\033[0m\]:\[\033[1;35m\]\W\[\033[0m\] \[\033[1;92m\]$(parse_git_branch)\[\033[0m\]$ '
+export PS1='\[\033[1;35m\]\u\[\033[0m\]:\[\033[1;35m\]\W\[\033[0m\] \[\033[1;92m\][$(branch)]\[\033[0m\]$ '
+
 
 # Magento aliases
 alias modman-php="php ~/Documents/tools/modman-php/modman.php" # Change on you path for modman-php
@@ -33,13 +34,14 @@ alias hosts='sudo nano /etc/hosts'
 # git commamands simplified
 alias gs='git status'
 alias gch='git checkout'
-alias gc='git commit'
+alias gc='git commit -am $1'
 alias gr='git rebase'
 alias grh='git reset --hard HEAD'
 alias gb='git branch'
 alias ga='git add -A'
 alias gpl='git pull'
 alias gps='git push'
+alias gpc='git push origin $(branch)'
 alias gl='git log --date-order --all --graph --format="%C(green)%h%Creset %C(yellow)%an%Creset %C(blue bold)%ar%Creset %C(red bold)%d%Creset%s"'
 alias gl2='git log --date-order --all --graph --name-status --format="%C(green)%H%Creset %C(yellow)%an%Creset %C(blue bold)%ar%Creset %C(red bold)%d%Creset%s"'
 

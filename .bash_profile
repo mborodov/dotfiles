@@ -55,6 +55,7 @@ alias dt="cd ~/Desktop"
 alias pr="cd ~/Documents/projects"
 alias g="git"
 alias h="history"
+alias bf="sudo find -x / -type f -size +1G -exec ls -lh {} \;"
 
 # Shell
 alias la='ls -lhaG'

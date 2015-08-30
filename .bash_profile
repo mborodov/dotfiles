@@ -63,6 +63,7 @@ alias la='ls -lhaG'
 alias top='top -ocpu'
 alias tf='tail -F -n200'
 alias clr='clear'
+alias do='ssh 128.199.63.120 -p 23451'
 
 alias du="du -h"
 alias df="df -h"

@@ -31,6 +31,7 @@ alias modman-php="php ~/Documents/tools/modman-php/modman.php" # Change on you p
 alias mcc="n98-magerun.phar cache:clean; n98-magerun.phar cache:flush"
 
 # Management
+alias edit='nano ~/.bash_profile'
 alias reload='source ~/.bash_profile && echo "sourced ~/.bash_profile"'
 alias redot='cd ~/Documents/dotfiles; source install.sh'
 alias hosts='sudo nano /etc/hosts'

@@ -27,6 +27,7 @@ export PS1='\[\033[1;35m\]\u\[\033[0m\]:\[\033[1;35m\]\W\[\033[0m\] \[\033[1;92m
 
 
 # Magento aliases
+alias composer="php ~/Documents/tools/composer.phar"
 alias modman-php="php ~/Documents/tools/modman-php/modman.php" # Change on you path for modman-php
 alias mcc="n98-magerun.phar cache:clean; n98-magerun.phar cache:flush"
 

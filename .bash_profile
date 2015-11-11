@@ -49,7 +49,7 @@ alias gpld='git pull origin develop'
 alias gplm='git pull origin master'
 alias gps='git push'
 alias gpc='git push origin $(branch)'
-alias gl='git log --date-order --all --graph --format="%C(green)%h%Creset %C(yellow)%an%Creset %C(blue bold)%ar%Creset %C(red bold)%d%Creset%s"'
+alias gl='git log -n5 --pretty=format:"%Cgreen%h%d%Creset %an - %s (%Cblue%ar%Creset)"'
 alias gl2='git log --date-order --all --graph --name-status --format="%C(green)%H%Creset %C(yellow)%an%Creset %C(blue bold)%ar%Creset %C(red bold)%d%Creset%s"'
 
 # Shortcuts
@@ -63,7 +63,6 @@ alias bf="sudo find -x / -type f -size +1G -exec ls -lh {} \;"
 # Shell
 alias la='ls -lhaG'
 
-alias top='top -ocpu'
 alias tf='tail -F -n200'
 alias clr='clear'
 alias do='ssh 128.199.63.120 -p 23451'

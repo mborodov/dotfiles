@@ -36,6 +36,8 @@ alias edit='nano ~/.bash_profile'
 alias reload='source ~/.bash_profile && echo "sourced ~/.bash_profile"'
 alias redot='cd ~/Documents/dotfiles; source install.sh'
 alias hosts='sudo nano /etc/hosts'
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
 
 # git commamands simplified
 alias gs='git status'

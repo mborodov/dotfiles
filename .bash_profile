@@ -38,6 +38,7 @@ alias redot='cd ~/Documents/dotfiles; source install.sh'
 alias hosts='sudo nano /etc/hosts'
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
+alias open='nautilus'
 
 # git commamands simplified
 alias gs='git status'
